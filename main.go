@@ -8,10 +8,18 @@ func main() {
 	line := 8
 
 	for	i := 0;	i < line;	i++ {
-		for i := 0; i < column; i++ {
-			fmt.Printf("# ")
+		if (i % 2) != 0 {
+			for x := 0; x < column; x+=2 {
+				fmt.Printf(" ")
+				fmt.Printf("#")
+			}
+		} else {
+			for x := 0; x < column; x+=2 {
+				fmt.Printf("#")
+				fmt.Printf(" ")
+			}
 		}
-		fmt.Println("\n")
+		fmt.Printf("\n")
 	}
 
 
