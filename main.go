@@ -19,7 +19,7 @@ func main() {
 		}
 	}
 	for{
-		fmt.Print("Enter column:")
+		fmt.Print("Enter line:")
 		_, err := fmt.Scanf("%d", &line)
 		if err != nil {
 			fmt.Print("\nYou enter incorret value\nTry again!)\n")
