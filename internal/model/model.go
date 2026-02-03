@@ -1,25 +1,26 @@
 package model
 
-import "time"
+type Desk struct {
+	desk [][]rune
+	move
+	Game
+}
 
-
-
-type Player struct{
-	Name string
+type Player struct {
+	Name   string
 	Rating int
 }
-
-type Game struct{
-	Users Player
-	moveCount move
+type deskSize struct {
+	column int
+	line   int
 }
 
+type Game struct {
+	deskSize
+	Player
+}
 type move struct {
-	count int
-	user Player
-}
-
-type Field struct {
-	NumberОfFigures int
-	Game
+	source string
+	dest   string
+	user   Player
 }

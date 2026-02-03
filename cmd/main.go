@@ -70,7 +70,7 @@ func main() {
 	var secondUser string
 	var alphabetStart int = 65
 	blackFirstLine := [26]rune{9820, 9822, 9821, 9819, 9818, 9821, 9822, 9820, 9820, 9822, 9821, 9819, 9818, 9821, 9822, 9820, 9820, 9822, 9821, 9819, 9818, 9821, 9822, 9820, 9820, 9822}
-	whiteFirstLine := [8]rune{9814, 9816, 9815, 9813, 9812, 9815, 9816, 9814}
+	whiteFirstLine := [26]rune{9814, 9816, 9815, 9813, 9812, 9815, 9816, 9814,9814, 9816, 9815, 9813, 9812, 9815, 9816, 9814,9814, 9816, 9815, 9813, 9812, 9815, 9816, 9814,9814, 9816}
 	getNameOfUsers(&firstUser, &secondUser)
 
 	getColumnAndLine(&column, &line)
